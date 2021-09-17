@@ -19,7 +19,7 @@ public class UsuarioController {
         return "/usuario/registro";
     }
 
-    @PostMapping(value = "/usuario/registro")
+    @PostMapping(value = "/usuario")
     public String registrar(Model model, Usuario usuario) {
         usuarioService.criarConta(usuario);
         model.addAttribute("user", usuario);
@@ -33,10 +33,7 @@ public class UsuarioController {
             cxEntrada = "/administrador/index";
         }
         return cxEntrada;
-
-
     }
-
 }
 
 
