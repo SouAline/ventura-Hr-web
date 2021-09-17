@@ -10,6 +10,13 @@
     <title>Title</title>
 
 </head>
+<style>
+    .bg-1 {
+        background-color: #477e5d;
+        color: #fff;
+    }
+
+</style>
 <body>
 <div class="sidenav">
     <div class="login-main-text">
