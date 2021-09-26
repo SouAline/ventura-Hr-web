@@ -19,8 +19,12 @@
 </style>
 <body>
 <div class="sidenav">
-    <div class="login-main-text">
-        <h2>Bem vindo ao Ventura Hr, ${user.nomeCompleto}</h2>
+    <div class="container-fluid bg-1 text-center">
+        <br>
+        <h1>${user.nomeCompleto}</h1>
+        <br>
+        <br>
     </div>
+</div>
 </body>
 </html>

@@ -1,13 +1,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <title>Ventura Hr</title>
-
+    <title>Ventura HR</title>
 </head>
 <br>
 <br>
@@ -33,10 +32,11 @@
     </div>
 </div>
 <div class="container">
-    <h2>Job Filter</h2>
-    <p>Type something in the input field to search the table for roles, cities, contract plan and more:</p>
-    <input class="form-control" id="myInput" type="text" placeholder="Search...">
+    <h2>BUSQUE POR VAGAS</h2>
+    <input class="form-control" id="myInput" type="text" placeholder="Digite Front-end ou Back-end">
     <br>
+
+
 
 
 </body>
