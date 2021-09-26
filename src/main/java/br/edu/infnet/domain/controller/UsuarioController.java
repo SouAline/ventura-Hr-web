@@ -19,18 +19,15 @@ public class UsuarioController {
         return "/usuario/registro";
     }
 
-    @PostMapping(value = "/usuario")
+    @PostMapping(value = "/registro")
     public String registrar(Model model, Usuario usuario) {
         usuarioService.criarConta(usuario);
-        model.addAttribute("user", usuario);
+        model.addAttribute("usuario", usuario);
         String cxEntrada = null;
 
-        if (usuario.getTipo() == Usuario.EMPRESA) {
-            cxEntrada = "/empresa/index";
-        } else if (usuario.getTipo() == Usuario.CANDIDATO) {
-            cxEntrada = "/candidato/index";
-        } else {
-            cxEntrada = "/administrador/index";
+        if (usuario.getTipo() == Usuario.EMPRESA || usuario.getTipo() == Usuario.CANDIDATO ||
+                usuario.getTipo() == Usuario.ADMIN) {
+            cxEntrada = "redirect:/login";
         }
         return cxEntrada;
     }
