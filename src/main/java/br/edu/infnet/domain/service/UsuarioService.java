@@ -13,6 +13,9 @@ public interface UsuarioService {
     @GetMapping(value = "/email/{email}")
     Usuario obterPorEmail(@PathVariable ("email") String email);
 
+    @GetMapping(value="/id/{id}")
+    Usuario obterPorId(String id);
+
     @PostMapping
     Usuario criarConta(Usuario usuario);
 }
