@@ -5,7 +5,7 @@ public class Criterio {
     private Integer id;
     private String descricao;
     private int perfil;
-    private int numero;
+    private int peso;
 
     public Criterio(){
 
@@ -35,11 +35,11 @@ public class Criterio {
         this.perfil = perfil;
     }
 
-    public int getNumero() {
-        return numero;
+    public int getPeso() {
+        return peso;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
+    public void setPeso(int peso) {
+        this.peso = peso;
     }
 }
