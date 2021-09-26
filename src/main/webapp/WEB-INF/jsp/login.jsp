@@ -36,11 +36,11 @@
                                 <div class="form-group">
                                     <br>
                                     <label>E-mail</label>
-                                    <input type="text" class="form-control" placeholder="Digite seu e-mail">
+                                    <input type="text" class="form-control" name="email" placeholder="Digite seu e-mail">
                                 </div>
                                 <div class="form-group">
                                     <label>Senha</label>
-                                    <input type="password" class="form-control" placeholder="Digite sua senha">
+                                    <input type="password" class="form-control" name="senha" placeholder="Digite sua senha">
                                 </div>
                                 <button type="submit" class="btn btn black">Entrar</button>
                             </form>
