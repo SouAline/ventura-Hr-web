@@ -8,12 +8,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
-@FeignClient(url="http://localhost:8083/vagas", name = "vagas")
+@FeignClient(url="http://localhost:8083/vagas", name = "vagaService")
 public interface VagaService {
 
-    @GetMapping( value = "/usuario/{id}")
-    List<Vaga> listarPorId(@PathVariable String id);
-
+    @GetMapping(value = "/usuario/{usuarioId}")
+    List<Vaga> listarPorId(@PathVariable Integer usuarioId);
 
     @PostMapping
     Vaga criarVaga(Vaga vaga);
